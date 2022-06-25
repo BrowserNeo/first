@@ -6,6 +6,12 @@ import pytest
 
 
 @pytest.fixture()
+def before_each():
+    print("Alls good")
+
+
+
+@pytest.fixture()
 def browser_size():
     browser.config.window_width = 1920
     browser.config.window_height = 1080
@@ -22,5 +28,5 @@ def test_positive(browser_size):
 
 def test_negative(browser_size):
     browser.open('https://google.com/ncr')
-    browser.element('[name="q"]').should(be.blank).type('selenona').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('selen').press_enter()
     browser.element('[id="search"]').should(have.text('Selenoid - User-oriented Web UI browser tests in Python'))

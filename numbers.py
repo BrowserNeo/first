@@ -1,3 +1,1 @@
-
-import math_pi
-print(pi)
+print("14")
