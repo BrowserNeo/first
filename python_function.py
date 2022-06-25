@@ -1,2 +1,27 @@
-def print_function(*args):
-    for arg in args:
+# Сделайте функцию, которая будет печатать
+# читаемое имя переданной ей функции и значений аргументов.
+# Вызовите ее внутри функций, описанных ниже
+# Подсказка: Имя функции можно получить с помощью func.__name__
+
+
+name = int(input())
+
+def func_rename(name):
+    rename = name.__name__
+    print(rename)
+
+
+def open_browser(browser_name):
+    fu
+    pass
+
+
+def go_to_companyname_homepage(page_url):
+    pass
+
+
+def find_registration_button_on_login_page(page_url, button_text):
+    pass
+
+
+print(f"{n1}  {n2}  {n3}")
