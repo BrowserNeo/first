@@ -14,6 +14,10 @@ def test_form():
 
     browser.element('[class="custom-control-label"]').should(have.exact_text('Male')).click()
 
+    browser.element('[class="custom-control-label"][for="hobbies-checkbox-3"]').should(have.exact_text('Music')).click()
+
+    browser.element('')
+
 
 
     browser.element('#submitCLEAN').click()
