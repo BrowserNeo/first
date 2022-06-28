@@ -9,6 +9,7 @@ usernumber = '1234567890'
 hobbies = 'Music'
 currentaddress = 'Neverland'
 data = '22 Jun 1990'
+month = 'April'
 
 
 def test_form():
@@ -26,7 +27,15 @@ def test_form():
     browser.element('[class="custom-control-label"][for="hobbies-checkbox-3"]').should(have.exact_text(hobbies)).click()
 
     browser.element('#dateOfBirthInput').click()
-    browser.element('#dateOfBirthInput').type(data)
+
+    browser.element('[class="react-datepicker__month-select"][contains(.//text(), month)]').click()
+
+
+    # Дата рождения - пока не работает (план б - кликами)
+
+
+
+
 
 
 
