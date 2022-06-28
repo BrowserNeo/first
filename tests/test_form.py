@@ -39,7 +39,7 @@ def test_form():
 
     browser.element('#subjectsContainer').click().should(have.exact_text("History")).click()
 
-    # Не сделал!!! Current address
+    # Не сделал!!! Current address Вообщем я пока здесь остановился но уже начинается разбор ДЗ. Пойду смотреть.
 
     browser.element('#state').click().should(have.exact_text(state)).click()
 
