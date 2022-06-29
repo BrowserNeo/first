@@ -6,8 +6,8 @@
 *.orig
 build
 skip-covered/
-tests/comparison/
-tests/adhoc/test_anything.py
+Demoqa_tests/tests/comparison/
+Demoqa_tests/tests/adhoc/test_anything.py
 custom.png
 
 # allure
