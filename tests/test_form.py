@@ -9,7 +9,7 @@ usernumber = '1234567890'
 hobbies = 'Music'
 currentaddress = 'Neverland'
 state = 'NCR'
-
+file =
 
 def test_form():
     browser.open('/')
@@ -39,7 +39,11 @@ def test_form():
 
 
 
-    browser.element('#react-select-3-input').click().type("NCR").press_enter()
+    browser.element('#react-select-3-input').type("NCR").press_enter()
+
+    browser.element('#react-select-4-input').type("Delhi").press_enter()
+
+    browser.element('#uploadPicture').type(file)
 
 
 
