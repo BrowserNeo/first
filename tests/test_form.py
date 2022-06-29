@@ -9,7 +9,7 @@ usernumber = '1234567890'
 hobbies = 'Music'
 currentaddress = 'Neverland'
 state = 'NCR'
-file =
+file = 'https://github.com/BrowserNeo/first/blob/master/tests/File_for_form.txt'
 
 def test_form():
     browser.open('/')
@@ -43,20 +43,10 @@ def test_form():
 
     browser.element('#react-select-4-input').type("Delhi").press_enter()
 
-    browser.element('#uploadPicture').type(file)
+    upload_button.send_keys("https://github.com/BrowserNeo/first/blob/master/tests/2022-06-23_23-05-09.png")
 
 
-
-
-
-
-
-
-
-
-
-
-    browser.element('#submitCLEAN').click()
+    browser.element('#submit').press_enter()
 
 
 
