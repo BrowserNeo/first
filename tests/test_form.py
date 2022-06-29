@@ -43,10 +43,9 @@ def test_form():
 
     browser.element('#react-select-4-input').type("Delhi").press_enter()
 
-    upload_button.send_keys("https://github.com/BrowserNeo/first/blob/master/tests/2022-06-23_23-05-09.png")
+    browser.element('#uploadPicture').type("../Files/2022-06-23_23-05-09.png")
 
-
-    browser.element('#submit').press_enter()
+    browser.element('#submit').click()
 
 
 
