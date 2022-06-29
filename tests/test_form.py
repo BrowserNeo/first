@@ -8,8 +8,6 @@ gender = 'Male'
 usernumber = '1234567890'
 hobbies = 'Music'
 currentaddress = 'Neverland'
-data = '22 Jun 1990'
-month = 'April'
 state = 'NCR'
 
 
@@ -29,19 +27,19 @@ def test_form():
 
     browser.element('#dateOfBirthInput').click()
 
-    browser.element('[class~="react-datepicker__month-select"]').element('[value="8"]').click()
+    browser.element('[class~="react-datepicker__month-select"]').element('[value ="9"]').click()
 
-    browser.element('[class~="react-datepicker__year-select"]').element('[value="1994"]').click()
+    browser.element('[class~="react-datepicker__year-select"]').element('[value ="1994"]').click()
 
     browser.element('[class~="react-datepicker__day--015"]').click()
 
     # Дата рождения - сделал костыльно, т.к. не понял как работает clear() в этой графе
 
-    browser.element('#subjectsContainer').click().should(have.exact_text("History")).click()
+    browser.element('#subjectsInput').type('History').press_enter()
 
-    # Не сделал!!! Current address Вообщем я пока здесь остановился но уже начинается разбор ДЗ. Пойду смотреть.
 
-    browser.element('#state').click().should(have.exact_text(state)).click()
+
+    browser.element('#react-select-3-input').click().type("NCR").press_enter()
 
 
 
