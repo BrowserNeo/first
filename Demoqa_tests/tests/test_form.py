@@ -9,7 +9,7 @@ usernumber = '1234567890'
 hobbies = 'Music'
 currentaddress = 'Neverland'
 state = 'NCR'
-file = 'https://github.com/BrowserNeo/first/blob/master/tests/File_for_form.txt'
+file = '../Files/2022-06-23_23-05-09.png'
 
 def test_form():
     browser.open('/')
@@ -43,7 +43,7 @@ def test_form():
 
     browser.element('#react-select-4-input').type("Delhi").press_enter()
 
-    browser.element('#uploadPicture').type("../Files/2022-06-23_23-05-09.png")
+    browser.element('#uploadPicture').send_keys(get.abspath('2022-06-23_23-05-09.png'))
 
     browser.element('#submit').click()
 
