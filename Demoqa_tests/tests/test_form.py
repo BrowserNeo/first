@@ -1,3 +1,4 @@
+import time, os
 from selene import have
 from selene.support.shared import browser
 
@@ -25,6 +26,8 @@ def test_form():
 
     browser.element('[class~="custom-control-label"][for="hobbies-checkbox-3"]').should(have.exact_text(hobbies)).click()
 
+# Date of Birth
+
     browser.element('#dateOfBirthInput').click()
 
     browser.element('[class~="react-datepicker__month-select"]').element('[value ="9"]').click()
@@ -33,21 +36,20 @@ def test_form():
 
     browser.element('[class~="react-datepicker__day--015"]').click()
 
-    # Дата рождения - сделал костыльно, т.к. не понял как работает clear() в этой графе
 
+# Subject
     browser.element('#subjectsInput').type('History').press_enter()
 
 
-
+# State&city
     browser.element('#react-select-3-input').type("NCR").press_enter()
 
     browser.element('#react-select-4-input').type("Delhi").press_enter()
 
-    browser.element('#uploadPicture').send_keys(get.abspath('2022-06-23_23-05-09.png'))
+# Picture
+
+    browser.element('#uploadPicture').send_keys(os.path.abspath(file))
+
+# Submit
 
     browser.element('#submit').click()
-
-
-
-
-
