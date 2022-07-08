@@ -53,3 +53,13 @@ def test_form():
 # Submit
 
     browser.element('#submit').click()
+
+
+# Check form
+
+
+    browser.element("table tr").element(2).should(have.text('Avraam Neo'))
+
+
+
+
