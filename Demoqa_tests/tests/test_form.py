@@ -57,9 +57,13 @@ def test_form():
 
 # Check form
 
-
-    browser.element("table tr").element(2).should(have.text('Avraam Neo'))
-
-
-
-
+    browser.all('.table-responsive').all('tr').element(1).should(have.text(firstname)).should(have.text(lastname))
+    browser.all('.table-responsive').all('tr').element(2).should(have.text(email))
+    browser.all('.table-responsive').all('tr').element(3).should(have.text(gender))
+    browser.all('.table-responsive').all('tr').element(4).should(have.text(usernumber))
+    browser.all('.table-responsive').all('tr').element(5).should(have.text('15 October,1994'))
+    browser.all('.table-responsive').all('tr').element(6).should(have.text('History'))
+    browser.all('.table-responsive').all('tr').element(7).should(have.text(hobbies))
+    browser.all('.table-responsive').all('tr').element(8).should(have.text('2022-06-23_23-05-09.png'))
+    browser.all('.table-responsive').all('tr').element(9).should(have.text(currentaddress))
+    browser.all('.table-responsive').all('tr').element(10).should(have.text(state))
