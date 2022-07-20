@@ -4,15 +4,7 @@
 # Подсказка: Имя функции можно получить с помощью func.__name__
 
 
-name = int(input())
-
-def func_rename(name):
-    rename = name.__name__
-    print(rename)
-
-
 def open_browser(browser_name):
-    fu
     pass
 
 
@@ -24,4 +16,6 @@ def find_registration_button_on_login_page(page_url, button_text):
     pass
 
 
-print(f"{n1}  {n2}  {n3}")
+
+def func(n1, n2, n3):
+    print(n1, n2, n3)
