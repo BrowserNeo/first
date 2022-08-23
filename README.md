@@ -4,7 +4,11 @@ test_google.py
 # 
 # 
 #  Demoqua_tests
-Разработай автотест на заполнение и отправку формы https://demoqa.com/automation-practice-form
+автотест на заполнение и отправку формы https://demoqa.com/automation-practice-form
+
+![2022-08-23_18-21-27](https://user-images.githubusercontent.com/106055633/186198964-c4f7c815-4bd8-43c6-b635-ae1168c652e0.png)
+
+
 
 Запушьте код в github-репозиторий и дайте на него ссылку в качестве ответа на домашнее задание.
 
