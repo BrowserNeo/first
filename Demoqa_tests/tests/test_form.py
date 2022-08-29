@@ -1,7 +1,9 @@
+import allure
 import time, os
 from selene import have
 from selene.support.shared import browser
 
+@allure.
 firstname = 'Avraam'
 lastname = 'Neo'
 email = 'figaro@gmail.com'
