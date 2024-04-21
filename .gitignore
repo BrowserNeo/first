@@ -168,3 +168,7 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
