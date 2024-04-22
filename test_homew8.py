@@ -32,6 +32,7 @@ def test_unzip_files():
     unzip_file = zipfile.ZipFile('resources/tmp/my_zip.zip')
     unzip_file.extractall('resources/tmp/')
     unzip_file.close()
+    unzip_file.close()unzip_file.close()
 
 
 # Проверка pdf
