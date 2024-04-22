@@ -15,7 +15,5 @@ def go_to_companyname_homepage(page_url):
 def find_registration_button_on_login_page(page_url, button_text):
     pass
 
-
-
 def func(n1, n2, n3):
     print(n1, n2, n3)
