@@ -1,2 +1,2 @@
-pytest==7.1.5
+pytest==7.1.4
 selene==2.0.0b5
